@@ -1,0 +1,176 @@
+<html>
+<Head><link rel="shortcut icon" href=Multimidias/ef.png>
+<Title> Matricula</Title>
+
+<script language=javascript type=text/javascript>
+function validar()
+{
+var pnome=form4.pnome.value;
+var cpf = form4.cpf.value;
+var email = form4.email.value;
+var cemail = form4.cemail.value;
+var senha = form4.senha.value;
+var csenha = form4.csenha.value;
+if (pnome =="")
+{
+alert('Preenchimento do nome obrigatorio');
+form4.pnome.focus();
+return false();
+}
+if (cpf =="")
+{
+alert('Preenchimento do cpf obrigatorio');
+form4.cpf.focus();
+return false();
+}
+if (email != cemail)
+{
+alert('email não compativel')
+form4.email.focus();
+return false();
+}
+if (senha != csenha)
+{
+alert('Senha não confere')
+form4.senha.focus();
+return false();
+}
+}
+
+</script>
+</head>
+
+<Body background=Multimidias/fundo2.jpg link=white alink=orange vlink=black>
+<p align=center>
+<font face=Gloucester MT size=7 color=white>
+Evolue Cursos</p></font>
+<hr width=40%>
+<hr width=30%><br>
+
+<table border=2 align=center  width=50%>
+<tr>
+<td  align=center><a href="index.htm"> Home</td>
+<td align=center><a href="quemsomos.htm"> Quem somos</td>
+<td align=center><a href="cursos.htm"> Cursos </td>
+<td align=center><a href="localizacao.htm"> Unidades</td>
+<td align=center><a href="contato.htm"> Contato</td>
+<td bgcolor=lightblue align=center><a href="matricula.htm"> Matricule-se</td></tr></table>
+<br>
+
+<fieldset style="width: 50%;">
+
+<legend>Dados pessoais</legend>
+
+
+<form name=form4 action=recebido2.htm method=post >
+
+<table border=1>
+<tr>
+<td>
+Nome Completo:</td>
+<td><input type=text name=pnome id=pnome size=40 placeholder="Obrigatório" required ></td></tr> <br>
+<tr>
+<td>
+cpf:</td>
+<td><input type=text name=cpf id=cpf size=40 placeholder="Obrigatório"> </td></tr> <br>
+<tr>
+<td>
+Endereço:</td>
+<td><input type=text name=end id=end size=40 placeholder=""></td> </tr><br>
+<tr>
+<td>
+Telefone:</td>
+<td><input type=text name=tel id=tel size=40 placeholder=""></td> </tr> <br>
+<tr>
+<td>
+E-mail:</td>
+<td><input type=text name=email id=email size=40 required></td> </tr> <br>
+<tr>
+<td>
+Confirme o e-mail:</td>
+<td><input type=text name=cemail id=cemail size=40 required> </td> </tr><br>
+<tr>
+<td>
+Senha</td>
+<td><input type=password name=senha id=senha size=40 required></td> </tr> <br>
+<tr>
+<td>
+Confirme a Senha</td>
+<td><input type=password name=csenha id=csenha size=40 required></td> </tr> <br>
+</table>
+</fieldset>
+
+<fieldset style="width: 50%;">
+
+<legend>Matricula</legend>
+
+<table border=1>
+<TR>
+<TD align=center>Escolha os Cursos:</TD>
+<!--TD align=center-->
+<td><select name="cli_edlcode"> 
+<option value="">Clique aqui
+<option value="1" >Lógica de Programação
+<option value="2" >Web design
+<option value="3" >Desenvolvimento de Sistemas
+<option value="4" >Desenvolvimento de games
+<option value="5" >Redes
+<option value="6" >Gestão
+<option value="6" >Outros
+</select> 
+</TD></tr>
+<tr>
+<TD align=center>Escolha a Unidade:</TD>
+<!--TD align=center-->
+<td><select name="cli_edlcode"> 
+<option value="">Clique aqui
+<option value="1" >Unidade 1
+<option value="2" >Unidade 2
+</select>
+</td></tr>
+<tr>
+<TD colspan=4 align=center><br>Forma de Pagamento</td></tr>
+<TR align=center>
+<TD> 
+<input type=radio name=pg id=bl value"boleto"> Boleto</TD>
+
+</TR>
+<tr>
+<td align=center>
+<input type=radio name=pg id=ca value"cartao"> Cartão</TD>
+<!--TD align=center-->
+<td><select name="cli_edlcode"> 
+<option value="">Clique aqui
+<option value="1" >Visa
+<option value="2" >Mastercard
+</select>
+</td></tr>
+
+<tr>
+<td colspan=3 align=center><br><br><br>
+<input type=submit name=enviar id=enviar value="Cadastrar" onclick="return validar()">
+</td></tr> </CENTER></table>
+</fieldset>
+
+
+
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+
+<TABLE BORDeR=1 WIDTH=100% ALIGN=CENTER>
+<tr align=center>
+<td>Fale Conosco<br><br><br><br>
+<a href=javascript:print();><img src=Multimidias/imprimir.jpg title="Clique para Imprimir" width=50 height=50></a>
+
+<a href=http://www.instagram.com.br><img src=Multimidias/instagram.jpg title="Siga nossa página" width=50 height=50></a>
+
+<a href=http://www.facebook.com.br/><img src=Multimidias/face.png title="Veja as novidades em nossa página" width=50 height=50></a>
+
+<img src=Multimidias/whatsapp-logo.jpg title="11 9 9999-1001" width=50 height=50></a>
+
+<a href=mailto:evoluecursos@gmail.com><img src=Multimidias/email.png title="Clique para mandar um e-mail" width=50 height=50></a>
+
+<a href=https://www.skype.com/pt-br/><img src=Multimidias/skipe.jpg title="Fale conosco" width=50 height=50></a>
+</td>
+</tr>
+</table>
